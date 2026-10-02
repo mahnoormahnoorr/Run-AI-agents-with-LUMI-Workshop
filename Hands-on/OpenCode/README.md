@@ -5,7 +5,7 @@ In this part you start the OpenCode harness in the LUMI AI Factory container, co
 Time: about 40 minutes
 You need: a LUMI account, your own LUMI project, and an Aitta API token [Aitta API Token](https://aitta-auth.csc.fi/myToken), choose your project)
 
-> [!warning]Before you start:
+> Before you start:
 > every command the agent runs is executed under your user account, and you are responsible for it. Read the [LUMI AI agent guide](https://docs.lumi-supercomputer.eu/development/ai-tools/ai-agent-guide/), before your first session. Never give the agent sensitive or confidential data.
 
 ## Prepare a safe working directory
