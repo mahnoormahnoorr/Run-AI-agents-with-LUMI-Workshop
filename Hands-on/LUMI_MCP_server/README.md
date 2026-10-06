@@ -25,4 +25,43 @@ Check that an Aitta LLM is selected ([see here](https://github.com/mahnoormahnoo
 
 ```bash
 Which tools do you have from the LUMI MCP server, and what does each one do?
+How's LUMI doing right now?
 ```
+## 2. See exactly what the agent receives
+
+call retrieve_docs yourself, without any agent or LLM involved.
+Run this in a terminal on LUMI or on your laptop. No login or token is needed:
+
+```bash
+curl -s https://lumi-aif-agents.2.rahtiapp.fi/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"retrieve_docs","arguments":{"query":"agent infrastructure","k":1}}}'
+```
+
+What the parts mean: 
+
+| Part | Meaning |
+|:-----|:-------------|
+| `"method":"tools/call"` | Call one of the server's tools; this is the same request your harness sends | 
+| `"name":"retrieve_docs"	` | Which tool to call| 
+| `"query":"..."	` | Your search, in plain language| 
+| `"k":1` | How many passages to return| 
+
+Now try your own searches. Change the query and k.
+Examples: 
+
+```bash
+MCP=https://lumi-aif-agents.2.rahtiapp.fi/mcp
+ask() {
+  curl -s $MCP \
+    -H 'Content-Type: application/json' \
+    -H 'Accept: application/json, text/event-stream' \
+    -d "{\"jsonrpc\":\"2.0\",\"id\":1,\"method\":\"tools/call\",\"params\":{\"name\":\"retrieve_docs\",\"arguments\":{\"query\":\"$1\",\"k\":$2}}}"
+}
+
+ask "how to use pytorch on lumi" 2
+ask "which slurm partition for a single GPU job" 3
+ask "where should I store a large dataset" 3
+```
+
