@@ -15,7 +15,7 @@ Give the agent its own folder, under version control, so you can see and undo ev
 ```
 ssh <username>@lumi.csc.fi
 
-export PROJECT=project_46XXXXXXX          # your own LUMI project
+export PROJECT=project_462001520          # your own LUMI project
 mkdir -p /scratch/$PROJECT/$USER/ai-agent
 cd /scratch/$PROJECT/$USER/ai-agent
 
