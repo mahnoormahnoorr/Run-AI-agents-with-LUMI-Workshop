@@ -125,6 +125,11 @@ Which git commands should I run to review and commit your changes?
 Run the commands yourself, in your second terminal.
 
 
+Optional: OpenCode on your own machine
+On macOS or Linux:
+
+curl -fsSL https://opencode.ai/install | bash
+
 
 
 
