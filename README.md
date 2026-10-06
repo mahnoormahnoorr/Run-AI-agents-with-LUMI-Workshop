@@ -4,5 +4,5 @@ The LUMI AI Factory agent environment is a [containerized environment](https://d
 
 ## Credits
 
-Original repo : https://github.com/lumi-ai-factory/laifs-agent-env
-Course material: https://lumi-ai-factory.github.io/agent-ecosystem/
+- Original repo : https://github.com/lumi-ai-factory/laifs-agent-env
+- Course material: https://lumi-ai-factory.github.io/agent-ecosystem/
