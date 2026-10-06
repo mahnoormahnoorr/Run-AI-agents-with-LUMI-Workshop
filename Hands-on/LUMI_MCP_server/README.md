@@ -10,4 +10,19 @@ The LUMI MCP server gives your agent two tools:
 | `get_service_status` | Reports LUMI's current status, planned maintenance and ongoing incidents | "Why is my job not starting? Is something down?" |
 
 
-## 
+## 1. Find the MCP tools in OpenCode
+
+On LUMI, the OpenCode container is already connected to the MCP server, so there is nothing to set up.
+
+```bash
+export PROJECT=project_46XXXXXXX
+cd /scratch/$PROJECT/$USER/agent-lab
+module load Local-LAIF lumi-aif-agents
+opencode
+```
+
+Check that an Aitta LLM is selected ([see here](https://github.com/mahnoormahnoorr/Run-AI-agents-with-LUMI-Workshop/tree/main/Hands-on/OpenCode#3-connect-to-aitta-and-pick-an-llm)), then ask:  
+
+```bash
+Which tools do you have from the LUMI MCP server, and what does each one do?
+```
