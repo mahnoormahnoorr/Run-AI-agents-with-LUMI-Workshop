@@ -18,10 +18,6 @@ ssh <username>@lumi.csc.fi
 export PROJECT=project_462001520          # your own LUMI project
 mkdir -p /scratch/$PROJECT/$USER/ai-agent
 cd /scratch/$PROJECT/$USER/ai-agent
-
-git init
-echo "print('hello from LUMI')" > hello.py
-git add . && git commit -m "start"
 ```
 
 ## 2. Start OpenCode in the container
