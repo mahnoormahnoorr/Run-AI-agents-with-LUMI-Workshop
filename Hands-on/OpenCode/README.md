@@ -91,15 +91,11 @@ Use the agent for what it is good at, while you stay in charge of the shared sys
 Ask:
 
 ```
-First, create a Python script hello.py that prints "hello from LUMI", the
-hostname of the node it runs on, and the current date and time.
+First, create a Python script hello.py that prints "hello from LUMI", the hostname of the node it runs on, and the current date and time.
 
-Then write a Slurm batch script job.sh for LUMI that runs hello.py on one CPU
-core for at most 5 minutes, using account <your project>. Check the LUMI
-documentation for the right partition, and write the job's output to a file
-named after the job ID.
+Then write a Slurm batch script job.sh for LUMI that runs hello.py on one CPU core for at most 5 minutes, using account <your project>. Check the LUMI documentation for the right partition, and write the job's output to a file named after the job ID.
 
-Show me both files before saving them. Do not try to submit the job.
+Save both files in the current directory. Do not try to submit the job.
 ```
 
 Approve the file write with Allow once. Then check the script yourself against [the LUMI Slurm documentation](https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/batch-job/): account, partition, time limit and resources.
