@@ -77,8 +77,7 @@ mkdir -p /scratch/$PROJECT/$USER/extra-data
 echo "sample data" > /scratch/$PROJECT/$USER/extra-data/readme.txt
 
 export SINGULARITY_BIND=$SINGULARITY_BIND,/scratch/$PROJECT/$USER/extra-data
-cd /scratch/$PROJECT/$USER/agent-lab
-opencode
+opencode /scratch/$PROJECT/$USER/agent-lab
 ```
 
 Ask: Read `/scratch/<your project>/<your user>/extra-data/readme.txt`.
