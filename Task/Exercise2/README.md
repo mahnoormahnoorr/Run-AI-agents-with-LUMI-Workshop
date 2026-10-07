@@ -13,8 +13,11 @@ Your job: get it running on one LUMI GPU, using the agent and the LUMI documenta
 ## What you're given
 
 02-laptop-to-lumi/
+
 ├── README_laptop.md   the colleague's setup notes -- written for a laptop
+
 ├── requirements.txt   what they pip-install
+
 └── train_small.py     the training script -- correct, you should not need to change it
 
 `train_small.py` trains a small network on random synthetic data, so it needs no dataset and no internet. It prints which device it found, the PyTorch version, the loss every 50 steps and the time per step.
