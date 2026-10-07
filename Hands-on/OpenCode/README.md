@@ -53,21 +53,8 @@ Choose Allow once.
 > [!warning]
 > Choose "Allow once" unless you are sure. "Allow always" lets the agent do that kind of action freely for the rest of the session, and the agent can also reach the folder where OpenCode keeps your API token.
 
-## 5. Test the boundaries
 
-Ask the agent each of these, one at a time. Read every permission request before answering.
-
-
-```
-Create hello.py.
-Create a file notes.txt with today's date.
-Delete hello.py.
-Show me the files in my home directory.
-List the files in /scratch/<your project>.
-```
-> Discuss: which of these would have been dangerous on your laptop without a container?
-
-## 6. Give the agent one extra folder
+## 5. Give the agent one extra folder
 
 Now, share data from outside the working directory, on purpose.
 Exit OpenCode `(Ctrl+C)`, then:
@@ -84,7 +71,7 @@ Ask: Read `/scratch/<your project>/<your user>/extra-data/readme.txt`.
 
 The agent can now read the file. Folders you did not add stay invisible.
 
-## 7. Let the agent write a job, submit it yourself
+## 6. Let the agent write a job, submit it yourself
 
 Use the agent for what it is good at, while you stay in charge of the shared system.
 
@@ -113,16 +100,7 @@ The output file contains `hello from LUMI`.
 
 If it fails: paste the `sbatch` error into OpenCode and ask the agent to fix the script. Inside the container, `sbatch: command not found` is expected.
 
-## 8. Review and save the agent's work
-
-Ask:
-```
-Which git commands should I run to review and commit your changes?
-```
-Run the commands yourself, in your second terminal.
-
-
-Optional: 
+## Optional: 
 
 ## OpenCode on your own machine
 
