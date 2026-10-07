@@ -39,7 +39,8 @@ fastmcp list https://lumi-aif-agents.2.rahtiapp.fi/mcp
 fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp \
     retrieve_docs 'query=how to use pytorch on lumi' 'k=2'
 
-fastmcp call $MCP get_service_status 'query=maintenance'
+fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp get_service_status 'query=status'
+fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp get_service_status 'query=incidents'
 ```
 
 
