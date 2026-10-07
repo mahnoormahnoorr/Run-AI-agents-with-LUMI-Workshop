@@ -38,6 +38,7 @@ The output file shows an AMD Instinct device name, the loss going down, and a ti
 One warning, because it costs people time: if the agent's first idea is a `pip install`, a `conda create` or a virtual environment, push back and ask it to check the LUMI documentation for containers first.
 
 ## Going further
+Ask the agent: 
 - Run with `--steps 2000` and compare the time per step with a CPU-only run (`--cpu`). Is the GPU worth it at this size? At `--hidden 4096`?
 - Ask the agent to write an updated `README_lumi.md` for the colleague. Would you send it as is?
 - Ask what the job was charged for. Does requesting more memory or CPU cores change the billing on a GPU partition?
