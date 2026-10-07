@@ -87,7 +87,7 @@ Save both files in the current directory. Do not try to submit the job.
 
 Approve the file write with Allow once. Then check the script yourself against [the LUMI Slurm documentation](https://docs.lumi-supercomputer.eu/runjobs/scheduled-jobs/batch-job/): account, partition, time limit and resources.
 
-Submit it from a second terminal, outside the container:
+Submit it from terminal, outside the opencode:
 
 ```
 cd /scratch/$PROJECT/$USER/ai-agent
