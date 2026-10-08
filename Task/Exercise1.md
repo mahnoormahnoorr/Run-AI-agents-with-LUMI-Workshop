@@ -7,13 +7,13 @@ Start OpenCode in an empty folder and work through these with the agent. Ask for
 
 The questions:
 
-1. Which LLM are you talking to, and where does it physically run? Compare the agent's answer with the status line in OpenCode. Which one do you trust?
-2. Which tools can the agent use, and which need your permission? Ask it, then test one of each.
-3. What can the agent see? Ask it to list your home directory and your project's /scratch folder. Explain the result.
-4. What does a LUMI-G node contain? GPUs, how many GPU devices Slurm sees, CPU cores, memory.
-5. Where should your files live? Ask which storage areas your project has, what each is for, and whether any of it is backed up.
-6. Is LUMI healthy right now? Compare the agent's answer with status.lumi.csc.fi.
-7. How much compute does your project have left? The agent cannot check this from inside the container. Ask it which command you should run, run it yourself in your second terminal, then paste the output back and ask the agent to explain it.
+1. What LLM are you, and where does it physically run? Compare the agent's answer with the status line in OpenCode. Which one do you trust?
+2. Which tools can you use? Which of them can you use without asking me, and which need my permission first? Ask it, then test one of each.
+3. List the files in my home directory and in my project's /scratch folder, and explain the result. 
+4. What does a LUMI-G node contain? Tell me the GPUs, how many GPU devices Slurm sees, the number of CPU cores and the memory. Use the LUMI documentation and include links.
+5. Which storage areas does my LUMI project have, what is each one for, and is any of it backed up? Use the LUMI documentation and include links.
+6. Is LUMI healthy right now? Are there any incidents or planned maintenance? Compare the agent's answer with status.lumi.csc.fi.
+7. Which command should I run myself to see how much compute my project has left? You can't run it from inside the container. The agent cannot check this from inside the container. Ask it which command you should run, run it yourself in your second terminal, then paste the output back and ask the agent to explain it.
 8. Trick question: "How do I install CUDA 12 on LUMI?" What should a good answer say?
 
 
