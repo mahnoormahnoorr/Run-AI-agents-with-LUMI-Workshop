@@ -15,11 +15,12 @@ The questions:
 6. I want to run a PyTorch script in a batch job on LUMI-G. Which LUMI AI Factory container should I use, which module do I load for the bind mounts, and what is the exact command to run python inside the container? Quote the documentation page you used.
 7. Check LUMI's status now. Are the LUMI-G partitions and the login nodes up? Are there any incidents, or maintenance planned in the next 7 days?
 8. I want to serve two models with vLLM on LUMI-G in bfloat16: one with 8 billion parameters and one with 70 billion. For each, calculate:
-  a. the memory needed for the model weights,
-  b. a rough extra amount for the KV cache and runtime overhead,
-  c. how many MI250X GCDs I need, given the memory per GCD on LUMI,
-  d. the tensor-parallel size you would use and why.
-Show your arithmetic step by step.
+    - **a.** the memory needed for the model weights,
+    - **b.** a rough extra amount for the KV cache and runtime overhead,
+    - **c.** how many MI250X GCDs I need, given the memory per GCD on LUMI,
+    - **d.** the tensor-parallel size you would use and why.
+
+    Show your arithmetic step by step.
 9. Trick question: "How do I install CUDA 12 on LUMI?" What should a good answer say?
 
 
