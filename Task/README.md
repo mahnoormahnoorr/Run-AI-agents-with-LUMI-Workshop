@@ -16,9 +16,9 @@ Each exercise has its own instructions file. Exercise 1 is a warm-up with no cod
 
 | # | Instructions | Code directory | Problem |
 |---|---|---|---|
-| 1 | [`exercise-01-warmup.md`](https://github.com/mahnoormahnoorr/Run-AI-agents-with-LUMI-Workshop/blob/main/Task/Exercise1.md) | — | Find out what the agent can see, do and get wrong on LUMI. |
-| 2 | [`exercise-02-laptop-to-lumi.md`](https://github.com/mahnoormahnoorr/Run-AI-agents-with-LUMI-Workshop/tree/main/Task/Exercise2) | `laptop-to-lumi/` | A training script written for a laptop with an NVIDIA GPU has to run on LUMI. |
-| 3 | [`exercise-03-job-sweep.md`](exercise-03-job-sweep.md) | `03-job-sweep/` | A parameter sweep submits 20 jobs one by one and floods the Slurm scheduler. |
+| 1 | [`exercise1`](https://github.com/mahnoormahnoorr/Run-AI-agents-with-LUMI-Workshop/blob/main/Task/Exercise1.md) | — | Find out what the agent can see, do and get wrong on LUMI. |
+| 2 | [`exercise2`](https://github.com/mahnoormahnoorr/Run-AI-agents-with-LUMI-Workshop/tree/main/Task/Exercise2) | `laptop-to-lumi/` | A training script written for a laptop with an NVIDIA GPU has to run on LUMI. |
+| 3 | [`exercise3`](exercise-03-job-sweep.md) | `03-job-sweep/` | A parameter sweep submits 20 jobs one by one and floods the Slurm scheduler. |
 
 
 ## Get started
