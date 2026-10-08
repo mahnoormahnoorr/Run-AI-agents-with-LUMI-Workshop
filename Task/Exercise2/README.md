@@ -28,8 +28,8 @@ On LUMI, PyTorch runs on AMD GPUs through ROCm. The PyTorch API still calls them
 1. Start OpenCode in `02-laptop-to-lumi/` and ask the agent to read `README_laptop.md` and explain what would not work on LUMI, with documentation links.
 2. Ask it to write `job.sh`: a Slurm batch script that runs `train_small.py` on one GPU for at most 10 minutes, using a LUMI AI Factory container and your project account. Tell it not to install anything.
 3. Check the script against the documentation pages it cites. Fix anything that doesn't match.
-4. Submit it yourself from your second terminal, and read the output.
-5. If the job fails, paste the error into OpenCode and iterate.
+4. Submit it yourself from your login node/ terminal, and read the output.
+5. If the job fails, ask opencode to read error file and iterate.
 
 ## Done when
 The output file shows an AMD Instinct device name, the loss going down, and a time per step, and `git diff` shows that `train_small.py` was not changed.
