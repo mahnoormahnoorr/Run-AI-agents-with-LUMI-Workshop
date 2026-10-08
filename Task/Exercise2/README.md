@@ -32,7 +32,7 @@ On LUMI, PyTorch runs on AMD GPUs through ROCm. The PyTorch API still calls them
 5. If the job fails, ask opencode to read error file and iterate.
 
 ## Done when
-The output file shows an AMD Instinct device name, the loss going down, and a time per step, and `git diff` shows that `train_small.py` was not changed.
+The output file shows an AMD Instinct device name, the loss going down, and a time per step.
 One warning, because it costs people time: if the agent's first idea is a `pip install`, a `conda create` or a virtual environment, push back and ask it to check the LUMI documentation for containers first.
 
 ## Going further
