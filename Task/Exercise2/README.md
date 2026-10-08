@@ -13,7 +13,7 @@ Your job: get it running on one LUMI GPU, using the agent and the LUMI documenta
 ## What you're given
 
 ```text
-02-laptop-to-lumi/
+Exercise2/
 ├── README_laptop.md   your colleague's setup notes, written for a laptop
 ├── requirements.txt   the Python packages they install with pip
 └── train_small.py     the training script; you should not need to change it
