@@ -15,7 +15,7 @@ The LUMI MCP server gives your agent two tools:
 On LUMI, the OpenCode container is already connected to the MCP server, so there is nothing to set up.
 
 ```bash
-export PROJECT=project_46XXXXXXX
+export PROJECT=project_462001520
 cd /scratch/$PROJECT/$USER/agent-lab
 module load Local-LAIF lumi-aif-agents
 opencode
