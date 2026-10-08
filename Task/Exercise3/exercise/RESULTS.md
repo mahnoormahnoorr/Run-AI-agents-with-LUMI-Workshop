@@ -1,15 +1,27 @@
 # Results: where the training time went
 
-## Baseline
+## 1. Baseline
 
 | Measure | Value |
 | --- | --- |
 | Time per step (ms) | |
 | Test accuracy (%) | |
 
-## Top 5 operations in the baseline profile
+## 2. The agent's guess, before any profile
 
-| Operation | Self CPU or GPU time | Share of total | Calls |
+| Rank | What the agent expected to dominate | Its estimated share of the time |
+| --- | --- | --- |
+| 1 | | |
+| 2 | | |
+| 3 | | |
+
+Did it follow the `TODO` comment? 
+
+## 3. Baseline profile: five most expensive operations
+
+**GPU table** (sorted by GPU time)
+
+| Operation | GPU time | Share of total | Calls |
 | --- | --- | --- | --- |
 | | | | |
 | | | | |
@@ -17,17 +29,30 @@
 | | | | |
 | | | | |
 
-## Fixes, one at a time
+**CPU table** (sorted by CPU time)
 
-| # | Change | Agent's predicted time per step | Measured time per step (ms) | Speedup vs baseline | Test accuracy (%) |
+| Operation | CPU time | Share of total | Calls |
+| --- | --- | --- | --- |
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+
+Roughly how much of each step is the GPU actually busy? 
+
+## 4. Fixes, one at a time
+
+| # | Change | Agent's predicted time per step (ms) | Measured time per step (ms) | Speedup vs baseline | Test accuracy (%) |
 | --- | --- | --- | --- | --- | --- |
 | 0 | Baseline | — | | 1.0× | |
 | 1 | | | | | |
 | 2 | | | | | |
 | 3 | | | | | |
 | 4 | | | | | |
+| 5 | | | | | |
 
-## What I learned
+## 5. What dominated the time
 
-Write a short paragraph: what dominated the time, how you knew, and where the
-agent's first guess was right or wrong. Point at numbers in the tables above.
+Write a short paragraph: what dominated the time, how you knew, and whether the `TODO` was right.
+Point at the numbers in the tables above.
