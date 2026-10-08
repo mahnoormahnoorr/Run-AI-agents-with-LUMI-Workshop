@@ -45,7 +45,7 @@ Good to know:
 Ask: 
 
 ```
-What's in this directory?
+Look in this directory and tell me what's here. If it's empty, also check whether there are any hidden files or folders.
 ```
 
 Choose Allow once.
