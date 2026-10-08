@@ -55,4 +55,4 @@ If you are happy to help us improve the setup, export a session from your workin
 opencode export > ~/agent-workshop-session.json
 ```
 
-Select your session when asked, and send the file to the organisers. Check it first: it contains everything you typed and everything the agent read.
+Select your session when asked, and send the file to the organisers. Check it first: it contains everything you typed and everything the agent read. You can send the file to email address: mahnoor.mahnoor@csc.fi
