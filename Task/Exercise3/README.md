@@ -11,6 +11,7 @@ The script contains several deliberate performance mistakes, and one piece of mi
 ## What you're given
 
 `train_shapes.py` trains a small convolutional network to tell circles, squares and crosses apart in noisy 48×48 images. It generates its own data, so there is nothing to download, and it reports time per step and test accuracy. With `--profile` it profiles ten steady-state steps instead of training, and writes a timeline to `trace.json`. It works as it stands, and the model should not need to change.
+
 `job.sh` runs the script on one GPU; anything you put after `job.sh` on the `sbatch` line is passed on to the script. `setup.sh` prepares the folder: run it once with your project, as `bash setup.sh` `project_462001520`, and it fills in job.sh, sets up Git and commits the starting point. `RESULTS.md` is the table to fill in.
 
 ## Background
