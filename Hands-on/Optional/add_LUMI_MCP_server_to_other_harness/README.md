@@ -14,6 +14,10 @@ claude mcp add --transport http --scope user lumi-aif https://lumi-aif-agents.2.
 
 See the [Claude Code MCP documentation](https://code.claude.com/docs/en/mcp) for other options.
 
+### Claude on the web
+
+Settings → Connectors → Add custom connector, and paste the URL (https://lumi-aif-agents.2.rahtiapp.fi/mcp) 
+
 ### Codex
 
 Add these lines to `~/.codex/config.toml`:
