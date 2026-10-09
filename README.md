@@ -134,7 +134,7 @@ For Windows and other options, such as npm, Homebrew and Docker, see the [OpenCo
 
 Out of the box, OpenCode uses OpenCode Zen, a model service run by the company that maintains OpenCode, so everything you type and every file the agent reads is sent to that company. To add Aitta and the LUMI MCP server instead, download this configuration and save it as `~/.config/opencode/opencode.json`, or open the section below to copy it:
 
-[opencode.json](./assets/opencode.json)
+[opencode.json](https://github.com/lumi-ai-factory/agent-ecosystem/blob/main/public/assets/opencode.json)
 
 <details>
 <summary>Show the contents of opencode.json</summary>
