@@ -33,6 +33,8 @@ call retrieve_docs yourself, without any agent or LLM involved.
 Run this in a terminal on LUMI or on your laptop. No login or token is needed:
 
 ```bash
+cd /scratch/$PROJECT/$USER/agent-lab
+
 module load cray-python/3.11.7
 pip install fastmcp
 fastmcp list https://lumi-aif-agents.2.rahtiapp.fi/mcp
