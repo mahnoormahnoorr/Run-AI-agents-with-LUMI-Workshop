@@ -33,16 +33,10 @@ call retrieve_docs yourself, without any agent or LLM involved.
 Run this in a terminal on LUMI or on your laptop. No login or token is needed:
 
 ```bash
-cd /scratch/$PROJECT/$USER/agent-lab
-
-module load cray-python/3.11.7
-pip install fastmcp
-fastmcp list https://lumi-aif-agents.2.rahtiapp.fi/mcp
-fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp \
-    retrieve_docs 'query=how to use pytorch on lumi' 'k=2'
-
-fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp get_service_status 'query=status'
-fastmcp call https://lumi-aif-agents.2.rahtiapp.fi/mcp get_service_status 'query=incidents'
+curl -s https://lumi-aif-agents.2.rahtiapp.fi/mcp \
+  -H 'Content-Type: application/json' \
+  -H 'Accept: application/json, text/event-stream' \
+  -d '{"jsonrpc":"2.0","id":1,"method":"tools/call","params":{"name":"retrieve_docs","arguments":{"query":"agent infrastructure","k":1}}}'
 ```
 
 
